@@ -1,6 +1,5 @@
 import React from "react";
 import { Button as ButtonMui, Typography } from "@mui/material";
-// import IconPlayVideo from "../../assets/icon_playvideo.svg";
 
 import { ButtonProps } from "./types";
 
@@ -21,7 +20,8 @@ const Button = ({
       size={size}
       {...props}
     >
-      <Typography variant="h7SemiBold">{label}</Typography>
+      {label}
+      {/* <Typography variant="h7SemiBold">{label}</Typography> */}
     </ButtonMui>
   );
 };

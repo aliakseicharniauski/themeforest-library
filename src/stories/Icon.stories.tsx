@@ -52,6 +52,5 @@ export const FluentUiSystemIcons = (args: any) => (
     <Icon.IconDataPie {...args} />
     <Icon.IconDataWhisker {...args} />
     <Icon.IconKey {...args} />
-
   </>
 );

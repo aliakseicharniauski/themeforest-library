@@ -1,10 +1,15 @@
 {
-  "name": "themeforest-library",
+  "name": "@aliakseicharniauski/themeforest-library",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/aliakseicharniauski"
+  },
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.20.7",
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^10.0.1",
     "@storybook/addon-actions": "^6.5.15",
     "@storybook/addon-essentials": "^6.5.15",
     "@storybook/addon-interactions": "^6.5.15",
@@ -18,6 +23,9 @@
     "babel-loader": "^8.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rollup": "^3.8.1",
+    "rollup-plugin-dts": "^5.1.0",
+    "tslib": "^2.4.1",
     "typescript": "^4.9.4"
   },
   "peerDependencies": {
@@ -36,6 +44,13 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
-  }
+    "build-storybook": "build-storybook",
+    "rollup": "rollup -c"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts"
 }

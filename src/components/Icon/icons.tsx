@@ -1,4 +1,3 @@
-import React from "react";
 export { ReactComponent as IconArrowDown } from "../../assets/icons/icon_arrow_down.svg";
 export { ReactComponent as IconArrowLeft24 } from "../../assets/icons/icon_arrow_left_24.svg";
 export { ReactComponent as IconArrowRight } from "../../assets/icons/icon_arrow_right.svg";
