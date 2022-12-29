@@ -1,3 +1,3 @@
 import * as Icon from "./icons";
 
-export default Icon;
+export default {...Icon};
