@@ -1,7 +1,8 @@
 import React from "react";
-import { Button as ButtonMui, Typography } from "@mui/material";
+import { Button as ButtonMui, ThemeProvider, Typography } from "@mui/material";
 
 import { ButtonProps } from "./types";
+import theme from "../../styles/theme";
 
 const Button = ({
   variant = "contained",
@@ -10,19 +11,22 @@ const Button = ({
   backgroundColor,
   label,
   startIcon,
+  endIcon,
   ...props
 }: ButtonProps) => {
   return (
-    <ButtonMui
-      startIcon={startIcon}
-      disabled={disabled}
-      variant={variant}
-      size={size}
-      {...props}
-    >
-      {label}
-      {/* <Typography variant="h7SemiBold">{label}</Typography> */}
-    </ButtonMui>
+    <ThemeProvider theme={theme}>
+      <ButtonMui
+        startIcon={startIcon}
+        endIcon={endIcon}
+        disabled={disabled}
+        variant={variant}
+        size={size}
+        {...props}
+      >
+        <Typography variant="h7SemiBold">{label}</Typography>
+      </ButtonMui>
+    </ThemeProvider>
   );
 };
 

@@ -5,5 +5,6 @@ export interface ButtonProps {
   size?: "small" | "medium" | "large";
   label: string;
   startIcon?: JSX.Element;
+  endIcon?: JSX.Element;
   onClick?: () => void;
 }

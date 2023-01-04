@@ -69,41 +69,49 @@ const theme = createTheme({
       fontSize: "46px",
       fontWeight: 800,
       lineHeight: "60px",
+      fontFamily: ["Manrope", "Open Sans"].join(", "),
     },
     h2ExtraBold: {
       fontSize: "38px",
       fontWeight: 800,
       lineHeight: "56px",
+      fontFamily: ["Manrope", "Open Sans"].join(", "),
     },
     h3ExtraBold: {
       fontSize: "30px",
       fontWeight: 800,
       lineHeight: "40px",
+      fontFamily: ["Manrope", "Open Sans"].join(", "),
     },
     h4Bold: {
       fontSize: "22px",
       fontWeight: 700,
       lineHeight: "33px",
+      fontFamily: ["Manrope", "Open Sans"].join(", "),
     },
     h5Bold: {
       fontSize: "20px",
       fontWeight: 700,
       lineHeight: "30px",
+      fontFamily: ["Manrope", "Open Sans"].join(", "),
     },
     h6Bold: {
       fontSize: "16px",
       fontWeight: 700,
       lineHeight: "24px",
+      fontFamily: ["Manrope", "Open Sans"].join(", "),
     },
     h7SemiBold: {
       fontSize: "14px",
       fontWeight: 600,
       lineHeight: "24px",
+      fontFamily: ["Manrope", "Open Sans"].join(", "),
     },
     h8SemiBold: {
       fontSize: "14px",
       fontWeight: 500,
       lineHeight: "24px",
+      fontFamily: ["Manrope", "Open Sans"].join(", "),
     },
     p1Regular: {
       fontSize: "20px",
@@ -150,4 +158,3 @@ const theme = createTheme({
 });
 
 export default theme;
-

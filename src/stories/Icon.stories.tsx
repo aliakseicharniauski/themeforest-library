@@ -3,7 +3,7 @@ import { Meta } from "@storybook/react";
 import Icon from "../components/Icon";
 
 export default {
-  title: "Example/Icon",
+  title: "Themeforest/Icon",
 } as Meta;
 
 export const FluentUiSystemIcons = (args: any) => (

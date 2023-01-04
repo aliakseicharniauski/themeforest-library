@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/aliakseicharniauski"
   },
-  "version": "1.0.9",
+  "version": "1.0.12",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.20.7",
@@ -22,6 +22,7 @@
     "@svgr/rollup": "^6.5.1",
     "@svgr/webpack": "5.5.0",
     "@types/react": "^18.0.26",
+    "@types/styled-components": "^5.1.26",
     "babel-loader": "^8.3.0",
     "postcss": "^8.4.20",
     "rollup": "^3.9.0",

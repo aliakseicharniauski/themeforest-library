@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
+    /* TODO: add paths */
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,

@@ -4,7 +4,7 @@ import Button from "../components/Button";
 import Icon from "../components/Icon";
 
 export default {
-  title: "Example/Button",
+  title: "Themeforest/Button",
   component: Button,
   argTypes: {
     backgroundColor: { control: "color" },
