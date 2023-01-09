@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { ReviewCardProps } from "./types";
 
 export const CardWrapper = styled(Box)`
@@ -17,11 +17,18 @@ export const CardWrapper = styled(Box)`
 export const CardImg = styled.div<Pick<ReviewCardProps, "img" | "variant">>`
   width: 80px;
   height: 80px;
-  position: ${(props) => props.variant === "img-outside" && "fixed"};
-  top: ${(props) => props.variant === "img-outside" && "0"};
-  background: url(${(props) => props.img});
+  background: url(${({ img }) => img});
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 50%;
+
+  ${({ variant = "img-inside" }) =>
+    ({
+      "img-inside": css``,
+      "img-outside": css`
+        position: fixed;
+        top: 0;
+      `,
+    }[variant])}
 `;

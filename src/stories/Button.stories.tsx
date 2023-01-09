@@ -16,30 +16,30 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 export const Primary = Template.bind({});
 Primary.args = {
   variant: "contained",
-  label: "Button",
+  children: "Button",
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   variant: "outlined",
-  label: "Button",
+  children: "Button",
 };
 
 export const Large = Template.bind({});
 Large.args = {
   size: "large",
-  label: "Button",
+  children: "Button",
 };
 
 export const Small = Template.bind({});
 Small.args = {
   size: "small",
-  label: "Button",
+  children: "Button",
 };
 
 export const ButtonWithIcon = Template.bind({});
 ButtonWithIcon.args = {
   startIcon: <Icon.IconPlayCircle />,
   variant: "contained",
-  label: "Watch the demo",
+  children: "Watch the demo",
 };

@@ -26,11 +26,9 @@ Big.args = {
   ...defaultArgs,
   size: "big",
   link: (
-    <Button
-      variant="text"
-      label="Read more"
-      endIcon={<Icon.IconArrowRight />}
-    />
+    <Button variant="text" endIcon={<Icon.IconArrowRight />}>
+      Read more
+    </Button>
   ),
 };
 
@@ -45,10 +43,8 @@ Small.args = {
   ...defaultArgs,
   size: "small",
   link: (
-    <Button
-      variant="text"
-      label="Read more"
-      endIcon={<Icon.IconArrowRight />}
-    />
+    <Button variant="text" endIcon={<Icon.IconArrowRight />}>
+      Read more
+    </Button>
   ),
 };

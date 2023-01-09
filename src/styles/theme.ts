@@ -6,6 +6,7 @@ declare module "@mui/material/styles" {
     h1ExtraBold: React.CSSProperties;
     h2ExtraBold: React.CSSProperties;
     h3ExtraBold: React.CSSProperties;
+    h4ExtraBold: React.CSSProperties;
     h4Bold: React.CSSProperties;
     h5Bold: React.CSSProperties;
     h6Bold: React.CSSProperties;
@@ -22,6 +23,7 @@ declare module "@mui/material/styles" {
     h1ExtraBold?: React.CSSProperties;
     h2ExtraBold?: React.CSSProperties;
     h3ExtraBold?: React.CSSProperties;
+    h4ExtraBold?: React.CSSProperties;
     h4Bold?: React.CSSProperties;
     h5Bold?: React.CSSProperties;
     h6Bold?: React.CSSProperties;
@@ -41,6 +43,7 @@ declare module "@mui/material/Typography" {
     h1ExtraBold: true;
     h2ExtraBold: true;
     h3ExtraBold: true;
+    h4ExtraBold: true;
     h4Bold: true;
     h5Bold: true;
     h6Bold: true;
@@ -79,6 +82,12 @@ const theme = createTheme({
     },
     h3ExtraBold: {
       fontSize: "30px",
+      fontWeight: 800,
+      lineHeight: "40px",
+      fontFamily: ["Manrope", "Open Sans"].join(", "),
+    },
+    h4ExtraBold: {
+      fontSize: "26px",
       fontWeight: 800,
       lineHeight: "40px",
       fontFamily: ["Manrope", "Open Sans"].join(", "),
@@ -150,9 +159,7 @@ const theme = createTheme({
   },
   components: {
     MuiCssBaseline: {
-      styleOverrides: `
-
-      `,
+      styleOverrides: ``,
     },
   },
 });

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { BlogCardProps } from "./types";
 
 export const CardWrapper = styled.div<Pick<BlogCardProps, "variant" | "size">>`
@@ -8,36 +8,35 @@ export const CardWrapper = styled.div<Pick<BlogCardProps, "variant" | "size">>`
   align-items: flex-start;
   /* TODO: add theme */
   background: #ffffff;
-  box-shadow: ${(props) =>
-    props.size === "medium" && "0px 4px 12px rgba(12, 68, 204, 0.1)"};
   border-radius: 6px;
-  max-width: ${(props) => {
-    switch (props.size) {
-      case "big":
-        return "635px";
-      case "medium":
-        return "540px";
-      case "small":
-        return "350px";
-    }
-  }}; ;
+
+  ${({ size = "big" }) =>
+    ({
+      big: css`
+        max-width: 635px;
+      `,
+      medium: css`
+        max-width: 540px;
+        /* TODO: add theme */
+        box-shadow: 0px 4px 12px rgba(12, 68, 204, 0.1);
+      `,
+      small: css`
+        max-width: 350px;
+      `,
+    }[size])}
 `;
 
 export const CardImg = styled.div<Pick<BlogCardProps, "img" | "size">>`
   width: 100%;
-  height: ${(props) => {
-    switch (props.size) {
-      case "big":
-        return "285px";
-      case "medium":
-        return "300px";
-      case "small":
-        return "200px";
-    }
-  }};
-  background: url(${(props) => props.img});
+  background: url(${({ img }) => img});
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 6px;
+  height: ${({ size = "big" }) =>
+    ({
+      big: "285px",
+      medium: "300px",
+      small: "200px",
+    }[size])};
 `;

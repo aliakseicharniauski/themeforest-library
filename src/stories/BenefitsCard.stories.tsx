@@ -30,11 +30,9 @@ CenterText.args = {
   ...defaultArgs,
   variant: "center-text",
   link: (
-    <Button
-      variant="text"
-      label="Read more"
-      endIcon={<Icon.IconArrowRight />}
-    />
+    <Button variant="text" endIcon={<Icon.IconArrowRight />}>
+      Read more
+    </Button>
   ),
 };
 
@@ -43,11 +41,9 @@ Stretched.args = {
   ...defaultArgs,
   variant: "stretched",
   link: (
-    <Button
-      variant="text"
-      label="Read more"
-      endIcon={<Icon.IconArrowRight />}
-    />
+    <Button variant="text" endIcon={<Icon.IconArrowRight />}>
+      Read more
+    </Button>
   ),
 };
 
